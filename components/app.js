@@ -19,12 +19,16 @@ class App {
   handleGetGradesSuccess(grades) {
     console.log("inside handleGetGradesSuccess");
     this.gradeTable.updateGrades(grades);
-    var avgGrade = 0;
-    for (var i = 0; i < grades.length; i++) {
-      avgGrade += grades[i].grade;
+    if (grades.length === 0) {
+      this.pageHeader.updateAverage(0);
+    } else {
+      var avgGrade = 0;
+      for (var i = 0; i < grades.length; i++) {
+        avgGrade += grades[i].grade;
+      }
+      avgGrade /= grades.length;
+      this.pageHeader.updateAverage(Math.floor(avgGrade));
     }
-    avgGrade /= grades.length;
-    this.pageHeader.updateAverage(Math.floor(avgGrade));
   }
   getGrades() {
     console.log("inside getGrades");
