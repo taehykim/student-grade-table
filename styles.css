@@ -7,3 +7,26 @@
 .container {
   margin-top: 1.5rem;
 }
+
+.average-grade-text-div {
+  text-align: right;
+}
+
+#student-grade-table-text {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+#average-grade-text {
+  display: inline-block;
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+
+.input-group-text {
+  width: 48px;
+}
+
+.form-btns {
+  text-align: right;
+}

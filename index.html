@@ -9,6 +9,10 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
 
     <title>GradeBook</title>
@@ -16,24 +20,98 @@
   <body>
     <div class="container">
       <header class="row">
-        <div class="col"><h3>Student Grade Table</h3></div>
-        <div class="col-4">
-          <h4>
-            Average Grade
-            <span class="badge badge-secondary"></span>
-          </h4>
+        <div class="col">
+          <p id="student-grade-table-text">Student Grade Table</p>
+        </div>
+        <div class="col-3 average-grade-text-div">
+          <p id="average-grade-text">
+            Average Grade <span class="badge badge-secondary"></span>
+          </p>
         </div>
       </header>
-      <table class="table table-striped table-bordered">
-        <thead class="thead-light">
-          <tr>
-            <th>Student Name</th>
-            <th>Course</th>
-            <th>Grade</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <hr />
+      <div class="row">
+        <div class="col">
+          <table class="table table-striped table-bordered">
+            <thead class="thead-light">
+              <tr>
+                <th>Student Name</th>
+                <th>Course</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="col-3">
+          <form>
+            <div class="form-group row">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  name="name"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fa fa-list-alt fa-lg" aria-hidden="true"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Course"
+                  name="course"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i
+                      class="fa fa-graduation-cap fa-lg"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                </div>
+                <input
+                  type="number"
+                  placeholder="Grade"
+                  name="grade"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="form-btns">
+              <button
+                type="submit"
+                id="form-submit-btn"
+                class="btn btn-success"
+              >
+                Add
+              </button>
+              <button
+                type="button"
+                id="form-cancel-btn"
+                class="btn btn-outline-dark"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -43,6 +121,7 @@
     <script src="components/app.js"></script>
     <script src="components/grade-table.js"></script>
     <script src="components/page-header.js"></script>
+    <script src="components/grade-form.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
