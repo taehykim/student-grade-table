@@ -32,10 +32,6 @@
   width: 48px;
 }
 
-/* .form-btns {
-  text-align: right;
-} */
-
 @media screen and (max-width: 1199px) {
   #header-div {
     display: flex;
