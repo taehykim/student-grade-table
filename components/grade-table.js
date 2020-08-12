@@ -6,6 +6,8 @@ class GradeTable {
   updateGrades(grades) {
     if (grades.length === 0) {
       this.noGradeText.classList.remove("d-none");
+    } else {
+      this.noGradeText.classList.add("d-none");
     }
 
     var tbody = this.tableElement.querySelector("tbody");
@@ -32,7 +34,7 @@ class GradeTable {
     var deleteBtn = document.createElement("button");
     buttonTd.appendChild(deleteBtn);
     deleteBtn.style.type = "button";
-    deleteBtn.classList.add("btn", "btn-light");
+    deleteBtn.classList.add("btn", "btn-danger");
     deleteBtn.textContent = "Delete";
     deleteBtn.addEventListener("click", function () {
       deleteGrade(data.id);
