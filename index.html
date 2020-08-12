@@ -9,31 +9,67 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
 
     <title>GradeBook</title>
   </head>
   <body>
     <div class="container">
-      <header class="row">
-        <div class="col"><h3>Student Grade Table</h3></div>
-        <div class="col-4">
-          <h4>
-            Average Grade
-            <span class="badge badge-secondary"></span>
-          </h4>
+      <div class="row">
+        <div class="col">
+          <header class="row">
+            <div class="col"><h4>Student Grade Table</h4></div>
+          </header>
+          <table class="table table-striped table-bordered">
+            <thead class="thead-light">
+              <tr>
+                <th>Student Name</th>
+                <th>Course</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </div>
-      </header>
-      <table class="table table-striped table-bordered">
-        <thead class="thead-light">
-          <tr>
-            <th>Student Name</th>
-            <th>Course</th>
-            <th>Grade</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+        <div class="col-3">
+          <h5>
+            <p>Average Grade</p>
+            <span class="badge badge-secondary"></span>
+          </h5>
+          <form>
+            <div class="form-group row form-row">
+              <label class="col-form-label"
+                ><i class="fa fa-user fa-lg" aria-hidden="true"></i
+              ></label>
+              <input type="text" placeholder="Name" name="name" />
+            </div>
+            <div class="form-group row form-row">
+              <label class="col-form-label">
+                <i class="fa fa-list-alt fa-lg" aria-hidden="true"></i>
+              </label>
+              <input type="text" placeholder="Course" name="course" />
+            </div>
+            <div class="form-group row form-row">
+              <label class="col-form-label">
+                <i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i>
+              </label>
+              <input type="number" placeholder="Grade" name="grade" />
+            </div>
+            <div class="form-btns">
+              <button type="submit" id="form-submit-btn" class="form-btn">
+                Add
+              </button>
+              <button type="button" id="form-cancel-btn" class="form-btn">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"

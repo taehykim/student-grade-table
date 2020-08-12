@@ -7,3 +7,24 @@
 .container {
   margin-top: 1.5rem;
 }
+
+.fa {
+  margin-right: 0.5rem;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  width: 80%;
+}
+
+.form-btns {
+  text-align: right;
+}
+
+.form-btn {
+  padding: 0.3rem;
+}
