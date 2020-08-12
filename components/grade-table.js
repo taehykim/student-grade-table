@@ -6,6 +6,8 @@ class GradeTable {
   updateGrades(grades) {
     if (grades.length === 0) {
       this.noGradeText.classList.remove("d-none");
+    } else {
+      this.noGradeText.classList.add("d-none");
     }
 
     var tbody = this.tableElement.querySelector("tbody");

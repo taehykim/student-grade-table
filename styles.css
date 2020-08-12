@@ -23,10 +23,59 @@
   margin-bottom: 0;
 }
 
+#add-grade-text {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
 .input-group-text {
   width: 48px;
 }
 
-.form-btns {
+/* .form-btns {
   text-align: right;
+} */
+
+@media screen and (max-width: 1199px) {
+  #header-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #student-grade-table-text {
+    text-align: center;
+  }
+
+  .average-grade-text-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .col-3 {
+    max-width: 100%;
+  }
+
+  .form-btns {
+    text-align: left;
+  }
+
+  #add-grade-text {
+    text-align: center;
+  }
 }
