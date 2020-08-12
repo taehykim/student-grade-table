@@ -56,14 +56,14 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .row {
+  .small-row {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
 
-  .col-3 {
+  .add-grade-div {
     max-width: 100%;
   }
 
