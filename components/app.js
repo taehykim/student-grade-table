@@ -5,6 +5,9 @@ class App {
     this.gradeTable = gradeTable;
     this.pageHeader = pageHeader;
     this.gradeForm = gradeForm;
+    this.createGrade = this.createGrade.bind(this);
+    this.handleCreateGradeError = this.handleCreateGradeError.bind(this);
+    this.handleCreateGradeSuccess = this.handleCreateGradeSuccess.bind(this);
   }
 
   handleGetGradesError(error) {
@@ -37,6 +40,7 @@ class App {
   }
 
   createGrade(name, course, grade) {
+    console.log("this inside createGrade:", this);
     console.log("Name:", name, "Course:", course, "Grade:", grade);
     $.ajax({
       method: "POST",
@@ -57,7 +61,6 @@ class App {
   }
 
   handleCreateGradeSuccess() {
-    console.log("inside handleCreateGradeSuccess");
     this.getGrades();
   }
 }
