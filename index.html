@@ -19,11 +19,18 @@
   </head>
   <body>
     <div class="container">
+      <header class="row">
+        <div class="col">
+          <p id="student-grade-table-text">Student Grade Table</p>
+        </div>
+        <div class="col-3 average-grade-text-div">
+          <p id="average-grade-text">
+            Average Grade <span class="badge badge-secondary"></span>
+          </p>
+        </div>
+      </header>
       <div class="row">
         <div class="col">
-          <header class="row">
-            <div class="col"><h4>Student Grade Table</h4></div>
-          </header>
           <table class="table table-striped table-bordered">
             <thead class="thead-light">
               <tr>
@@ -36,10 +43,6 @@
           </table>
         </div>
         <div class="col-3">
-          <h5>
-            <p>Average Grade</p>
-            <span class="badge badge-secondary"></span>
-          </h5>
           <form>
             <div class="form-group row form-row">
               <label class="col-form-label"
@@ -79,6 +82,7 @@
     <script src="components/app.js"></script>
     <script src="components/grade-table.js"></script>
     <script src="components/page-header.js"></script>
+    <script src="components/grade-form.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
