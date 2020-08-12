@@ -13,12 +13,14 @@
 }
 
 #student-grade-table-text {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  margin-bottom: 0;
 }
 
 #average-grade-text {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  margin-bottom: 0;
 }
 
 .fa {
@@ -36,19 +38,4 @@ input {
 
 .form-btns {
   text-align: right;
-}
-
-.form-btn {
-  padding: 0.5rem;
-  outline: none;
-  background-color: #f0f0f0;
-  border: 3px solid #6e6b6b;
-  border-radius: 50px;
-  width: 5rem;
-}
-
-.form-btn:hover {
-  background-color: #6e6b6b;
-  border: 3px solid #6e6b6b;
-  color: white;
 }
