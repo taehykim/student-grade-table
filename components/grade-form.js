@@ -28,7 +28,7 @@ class GradeForm {
     this.formElement.previousElementSibling.textContent = "Add Grade";
     addBtn.classList.remove("d-none");
     updateBtn.classList.add("d-none");
-    this.formElement.reset();
+    // this.formElement.reset();
   }
 
   handleSubmit(event) {
@@ -39,6 +39,7 @@ class GradeForm {
     // console.log(event.target);
     // console.log(this.formElement);
     // why does the instruction ask us to do event.target when we already have this.formElement?
+    // var newFormData = new FormData(this.formElement);
     var newFormData = new FormData(event.target);
     var name = newFormData.get("name");
     var course = newFormData.get("course");
