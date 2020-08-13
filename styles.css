@@ -23,13 +23,18 @@
   margin-bottom: 0;
 }
 
-#add-grade-text {
+#form-title-text {
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
 .input-group-text {
   width: 48px;
+}
+
+.table-btn {
+  border: none;
+  margin-right: 0.8rem;
 }
 
 @media screen and (max-width: 1199px) {
@@ -63,7 +68,7 @@
     align-content: center;
   }
 
-  .add-grade-div {
+  .form-div {
     max-width: 100%;
   }
 
@@ -71,7 +76,7 @@
     text-align: left;
   }
 
-  #add-grade-text {
+  #form-title-text {
     text-align: center;
   }
 }
