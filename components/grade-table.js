@@ -28,10 +28,6 @@ class GradeTable {
     this.deleteGrade = deleteGrade;
   }
 
-  // onUpdateClick(updateGrade) {
-  //   this.updateGrade = updateGrade;
-  // }
-
   renderGradeRow(data, deleteGrade, gradeForm) {
     var nameInput = document.getElementById("name");
     var courseInput = document.getElementById("course");
@@ -48,23 +44,14 @@ class GradeTable {
     var deleteIcon = document.createElement("i");
     updateIcon.classList.add("fas", "fa-edit", "fa-2x");
     deleteBtn.classList.add("fas", "fa-trash-alt", "fa-2x");
-
     buttonTd.append(updateBtn, deleteBtn);
-    // deleteBtn.style.type = "button";
-    // deleteBtn.classList.add("btn", "btn-danger");
-    // deleteBtn.textContent = "Delete";
     deleteBtn.appendChild(deleteIcon);
     deleteBtn.classList.add("table-btn");
     deleteBtn.addEventListener("click", function () {
       deleteGrade(data.id);
     });
-
-    // updateBtn.style.type = "button";
-    // updateBtn.classList.add("btn", "btn-light");
-    // updateBtn.textContent = "Update";
     updateBtn.appendChild(updateIcon);
     updateBtn.classList.add("table-btn");
-
     updateBtn.addEventListener("click", function () {
       // var formTag = document.querySelector("form");
       var formTitleText = document.getElementById("form-title-text");
